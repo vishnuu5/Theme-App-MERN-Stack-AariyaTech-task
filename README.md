@@ -82,7 +82,7 @@ Create `backend/.env`:
 
 ```bash
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/theme-app
+MONGODB_URI=
 NODE_ENV=development
 CORS_ORIGIN=http://localhost:3000
 ```
@@ -231,7 +231,7 @@ In Render dashboard, add:
 ```bash
 NODE_ENV=production
 PORT=10000
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/theme-app
+MONGODB_URI=
 CORS_ORIGIN=https://your-frontend-url.vercel.app
 ```
 
@@ -327,7 +327,7 @@ NEXT_PUBLIC_API_URL=https://your-backend-url.onrender.com/api
 
 ```bash
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/theme-app
+MONGODB_URI=
 NODE_ENV=development
 CORS_ORIGIN=http://localhost:3000
 ```
@@ -336,7 +336,7 @@ CORS_ORIGIN=http://localhost:3000
 
 ```bash
 PORT=10000
-MONGODB_URI=your_mongodb_atlas_connection_string
+MONGODB_URI=
 NODE_ENV=production
 CORS_ORIGIN=https://your-vercel-frontend-url.app
 ```
@@ -467,8 +467,8 @@ curl -X POST http://localhost:5000/api/themes \
 
 - For local MongoDB: Ensure `mongod` service is running
 - Check connection string in `backend/.env`:
-  - Local: `mongodb://localhost:27017/theme-app`
-  - Atlas: `mongodb+srv://username:password@cluster.mongodb.net/theme-app`
+  - Local: ``
+  - Atlas: ``
 - Verify MongoDB is accessible on the network
 - For MongoDB Atlas:
   - Whitelist your IP address in Network Access
