@@ -33,6 +33,25 @@ A full-stack web application built with **MERN** (MongoDB, Express, React/Next.j
 - **Mongoose** - ODM for MongoDB
 - **CORS** - Cross-origin resource sharing
 
+## Bonus Features Implemented
+
+- **TypeScript** throughout frontend
+- **Server-Side Rendering** ready with Next.js App Router (optimized)
+- **Theme Customization** with preset + custom colors
+- **Responsive Design** for all devices
+- **Production Deployment** guides for Vercel & Render
+- **Complete Documentation** with troubleshooting examples
+- **Missing Hooks** (use-toast, use-mobile) implemented
+- **Hydration Error Fix** with suppressHydrationWarning
+- **Next.js 16 Config** optimized (Turbopack, no React Compiler)
+
+## Live Demo & Links
+
+- **Frontend URL**: https://theme-app-mern-stack-aariya-tech-ta.vercel.app
+- **Backend URL**: https://theme-app-mern-stack-aariyatech-task.onrender.com
+- **GitHub Repository**: https://github.com/vishnuu5/Theme-App-MERN-Stack-AariyaTech-task.git
+- **API Documentation**: See Backend API section
+
 ## Getting Started
 
 ### Prerequisites
@@ -232,7 +251,7 @@ In Render dashboard, add:
 NODE_ENV=production
 PORT=10000
 MONGODB_URI=
-CORS_ORIGIN=https://your-frontend-url.vercel.app
+CORS_ORIGIN=
 ```
 
 **Step 5: Deploy**
@@ -320,7 +339,7 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ### Frontend `.env.production` (Vercel)
 
 ```bash
-NEXT_PUBLIC_API_URL=https://your-backend-url.onrender.com/api
+NEXT_PUBLIC_API_URL=
 ```
 
 ### Backend `.env` (Development)
@@ -338,7 +357,7 @@ CORS_ORIGIN=http://localhost:3000
 PORT=10000
 MONGODB_URI=
 NODE_ENV=production
-CORS_ORIGIN=https://your-vercel-frontend-url.app
+CORS_ORIGIN=
 ```
 
 ## Database Models
@@ -570,22 +589,3 @@ curl -X POST http://localhost:5000/api/themes \
 ## License
 
 MIT License - See LICENSE file for details
-
-## Live Demo & Links
-
-- **Frontend URL**: https://your-vercel-url.vercel.app
-- **Backend URL**: https://your-render-url.onrender.com
-- **GitHub Repository**: https://github.com/vishnuu5/Theme-App-MERN-Stack-AariyaTech-task.git
-- **API Documentation**: See Backend API section
-
-## Bonus Features Implemented
-
-- **TypeScript** throughout frontend
-- **Server-Side Rendering** ready with Next.js App Router (optimized)
-- **Theme Customization** with preset + custom colors
-- **Responsive Design** for all devices
-- **Production Deployment** guides for Vercel & Render
-- **Complete Documentation** with troubleshooting examples
-- **Missing Hooks** (use-toast, use-mobile) implemented
-- **Hydration Error Fix** with suppressHydrationWarning
-- **Next.js 16 Config** optimized (Turbopack, no React Compiler)
